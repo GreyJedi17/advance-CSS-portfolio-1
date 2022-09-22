@@ -9,7 +9,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: var(--blue)
+    color: var(--blue);
 }
 
 html {
@@ -45,11 +45,11 @@ a {
 }
 
 a:hover {
-    color: var(--white)
+    color: var(--white);
 }
 
 a:active {
-    color: var(--blue)
+    color: var(--blue);
 }
 
 section {
@@ -60,7 +60,7 @@ section {
     position: relative;
     left: 2rem;
     border: solid var(--light-blue);
-    margin: 0.5rem
+    margin: 0.5rem;
 }
 
 aside {
@@ -87,17 +87,25 @@ img:hover {
 
 .img-label {
     position: absolute;
-    left: 8px;
     bottom: 16px;
     background-color: var(--light-blue);
     width: 20rem;
     padding: 10px;
+    color: var(--grey);
 }
 
 .overlay {
     font-size: 180%;
     margin: -4px;
+    color: var(--grey);
+    padding: 0 0 0 1rem;
 }
+
+.sub-overlay {
+    color: var(--grey);
+    padding: 0 0 0 1rem;
+}
+
 .header-links {
     grid-column-start: 6;
     grid-column-end: 9;
