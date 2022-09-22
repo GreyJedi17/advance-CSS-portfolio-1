@@ -6,43 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Advanced CSS Challenge</title>
+    <title>Portfolio 1 | Advanced CSS</title>
 </head>
 <body>
 
     <!-- TODO: make sure the nav bar works with links. -->
-    <header>
+    <header class="header">
         <h1>Ryan Cottle</h1>
-        <nav class="nav">
-            <span class="about">About</span>
-            <span class="projects">Projects</span>
-            <span class="contact">Contact</span>
-            <span class="about">About</span>
+        <nav class="header-links">
+            <a href='#about'>About Me</a>
+            <a href='#work'>Work</a>
+            <a href='#contact'>Contact Me</a>
+            <a href='#resume'>Resume</a>
         </nav>
-        <h2>About</h2>
-        <!-- TODO: write a better paragraph here  -->
-        <p>This is information about me as I've learned CSS</p>
+
     </header>
-    
+
+    <section class="subtitle">Cool Subtitle Here</section>
+
+    <aside><h2 id="about">About Me</h2></aside>
+    <!-- TODO: write a better paragraph here  -->
+    <p>This is information about me as I've learned CSS.</p>
+
     <!-- TODO: need to have sections of one main, 4 small tiles in two columns. Must make the page responsive and mobile first  -->
     <main>
-        <section></section>
-        <h3></h3>
-        <section></section>
-        <h3></h3>
-        <section></section>
-        <h3></h3>
-        <section></section>
-        <h3></h3>
-        <section></section>
-        <h3></h3>
+        <aside><h2 id="work">Work</h2></aside>
+        <section class="tile-1">
+            <figure class="big">
+                <!-- <img src="./assets/images/rain.jpg" alt="rain drops on window" /> -->
+                <h3>Surf Report</h3>
+                <p>MERN Stack</p>
+            </figure>
+        </section>
+       
+        <section class="tile-2">
+            <h3>LED Wall</h3>
+            <p>Node/IoT</p>
+        </section>
+       
+        <section class="tile-3">
+            <figure>
+                <h3>Calculator</h3>
+                <p>React/JavaScript/CSS</p>
+            </figure>
+        </section>
+        
+        <section class="tile-4">
+            <figure>
+                <h3>Pastel Puzzles</h3>
+                <p>MERN stack</p>
+            </figure>
+        </section>
+        
+        <section class="tile-5">
+            <figure>
+                <h3>SEO</h3>
+                <p>HTML/CSS</p>
+            </figure>
+        </section>
+        
 
     </main>
 
     <footer>
+        <aside><h2 id="contact">Contact Me</h2></aside>
+        <!-- add phone link to pop-out and call phone number  -->
+        <span class="phone">555-555-5555</span>
+        <!-- add link to send email in default email system  -->
+        <span class="email">email@email.com</span>
+        <!-- open new tab in github repo  -->
+        <span class="github">Github</span>
+        <!-- open new tab for linkedin account  -->
+        <span class="linkedin">linkedin</span>
         <!-- TODO: add fake phone, email, linkedin, github, etc. links and make sure they work  -->
 
     </footer>
 
 </body>
 </html>
+
+<!-- hand address: https://images.pexels.com/photos/296282/pexels-photo-296282.jpeg?auto=compress&cs=tinysrgb&w=600   -->
+
+<!-- bridge address: https://picjumbo.com/wp-content/uploads/the-golden-gate-bridge-sunset-2210x1473.jpg  -->
+
+<!-- umbrella address: https://cache.desktopnexus.com/thumbseg/1308/1308654-bigthumbnail.jpg  -->
+
+<!-- rain address: https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600  -->
+
+<!-- snowy mountains address: https://pikwizard.com/photos/winter-river-mountains-snow-free-photo--7dfd148fb38cdc9da4a1913244af4a5f-m.jpg  -->
