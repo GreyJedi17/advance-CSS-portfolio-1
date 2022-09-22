@@ -11,26 +11,26 @@
 <body>
 
     <!-- TODO: make sure the nav bar works with links. -->
-    <header>
+    <header class="header">
         <h1>Ryan Cottle</h1>
         <nav class="header-links">
-            <span class="about">About</span>
-            <span class="projects">Work</span>
-            <span class="contact">Contact Me</span>
-            <span class="resume">Resume</span>
+            <span class="about"><a href='#about'>About Me</a></span>
+            <span class="projects"><a href='#work'>Work</a></span>
+            <span class="contact"><a href='#contact'>Contact Me</a></span>
+            <span class="resume"><a href='#resume'>Resume</a></span>
         </nav>
 
     </header>
 
     <section class="subtitle">Cool Subtitle Here</section>
 
-    <aside><h2>About</h2></aside>
+    <aside><h2 id="about">About Me</h2></aside>
     <!-- TODO: write a better paragraph here  -->
     <p>This is information about me as I've learned CSS.</p>
 
     <!-- TODO: need to have sections of one main, 4 small tiles in two columns. Must make the page responsive and mobile first  -->
     <main>
-        <aside><h2>Work</h2></aside>
+        <aside><h2 id="work">Work</h2></aside>
         <section class="tile-1">
             <figure class="big">
                 <!-- <img src="./assets/images/rain.jpg" alt="rain drops on window" /> -->
@@ -41,7 +41,7 @@
        
         <section class="tile-2">
             <h3>LED Wall</h3>
-            <p>NOde/IoT</p>
+            <p>Node/IoT</p>
         </section>
        
         <section class="tile-3">
@@ -69,7 +69,7 @@
     </main>
 
     <footer>
-        <aside><h2>Contact</h2></aside>
+        <aside><h2 id="contact">Contact Me</h2></aside>
         <!-- add phone link to pop-out and call phone number  -->
         <span class="phone">555-555-5555</span>
         <!-- add link to send email in default email system  -->
