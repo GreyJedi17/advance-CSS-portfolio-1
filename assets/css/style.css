@@ -58,17 +58,26 @@ section {
     min-width: 200px;
     max-width: 1000px;
     position: relative;
-    left: 2rem;
-    border: solid var(--light-blue);
-    margin: 0.5rem;
+    /* left: 2rem; */
+    /* border: solid var(--light-blue); */
+    /* margin: 0.5rem; */
 }
 
-aside {
+#about aside, #work aside, #contact aside {
     display: flex;
-    border-right: solid 3px var(--blue);
-    max-width: fit-content;
+    /* border-right: solid 3px var(--blue); */
+    /* max-width: fit-content; */
     padding: 5px;
     margin-left: 30px;
+    width: 150px;
+    /* background-color: blue; */
+}
+
+#about aside h2, #work aside h2, #contact aside h2 {
+    width: 100%;
+    border-right: solid 3px var(--blue);
+    height: fit-content;
+    padding: 1rem 0;
 }
 
 img {
@@ -113,4 +122,15 @@ img:hover {
     justify-content: center;
 }
 
+#about, #work {
+    display: flex;
+}
+
+#about aside {
+    /* width: 300px; */
+}
+
+#about div {
+    padding: 25px;
+}
 /* add media queries here to make it break at small smartphones  */
