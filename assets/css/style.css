@@ -68,9 +68,9 @@ section {
     /* border-right: solid 3px var(--blue); */
     /* max-width: fit-content; */
     padding: 5px;
+    /* take margin left off & width for mobile */
     margin-left: 30px;
     width: 150px;
-    /* background-color: blue; */
 }
 
 #about aside h2, #work aside h2, #contact aside h2 {
@@ -122,15 +122,16 @@ img:hover {
     justify-content: center;
 }
 
-#about, #work {
+#about, #work, #contact {
     display: flex;
+    /* add flex-direct colum & align-items center in mobile. */
 }
 
-#about aside {
+/* #about aside {
     /* width: 300px; */
-}
+/* } */ 
 
-#about div {
+/* #about div {
     padding: 25px;
-}
+} */
 /* add media queries here to make it break at small smartphones  */
