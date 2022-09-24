@@ -8,7 +8,6 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
     color: var(--blue);
 }
 
@@ -16,28 +15,31 @@ html {
     scroll-behavior: smooth;
 }
 
+/* sets information about header and nav bar */
 header {
     background-color: var(--grey);
-    display: grid;
-    grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%;
+    display: flex;
+    width: 100%
 }
 
+/* sets name at top left and style  */
 h1 {
     padding: 10px 5px 10px 50px;
     margin: 10px 5px 10px 0px;
     background-color: var(--light-blue);
     color: var(--grey);
-    display: grid;
-    grid-column-start: 0;
     min-width: 200px;
     max-width: 200px;
 }
 
+/* sets nav bar positioning  */
 nav {
     position: relative;
+    justify-content: flex-end;
     top: 2rem;
 }
 
+/* defines anchors in nav bar  */
 a {
     color: var(--light-blue);
     text-underline-offset: 0.25rem;
@@ -52,103 +54,200 @@ a:active {
     color: var(--blue);
 }
 
-section {
-    display: block;
-    flex-wrap: wrap;
-    min-width: 20rem;
-    max-width: 70rem;
-    position: relative;
-}
-
-#about aside, #work aside, #contact aside {
+/* this impacts the section bar on the left-hand side  */
+aside {
     display: flex;
-    padding: 5px;
-    /* take margin left off & width for mobile */
-    margin-left: 30px;
-    width: 150px;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: end;
 }
 
-#about aside h2, #work aside h2, #contact aside h2 {
-    width: 100%;
-    border-right: solid 3px var(--blue);
-    padding: 1rem 0;
+/* adds borders to the labels on the left  */
+aside section {
+    border-right: 4px solid var(--blue);
+    padding: 4px;
 }
 
+/* image attributes  */
 img {
     width: 100%;
     height: 100%;
     opacity: 70%;
+    border: 5px solid var(--light-blue);
 }
 
 img:hover {
     opacity: 100%;
 }
-
+/* changes about paragraphs and subheadings on image text  */
 div p {
     text-align: left;
     padding: 0 0 0 1rem;
 }
 
+footer {
+    margin: 10px 10px 100px 10px;
+    justify-content: right;
+}
+
+/* spacing between header and nav menu  */
+header,
+nav {
+   justify-content: space-between ;
+}
+
+/* impacts spacing in nav bar  */
+nav a {
+    justify-content: space-around;
+    margin: 0 10px 0 0;
+}
+
+footer span a {
+    color: var(--blue);
+}
+
+/* this is the contain that holds the section headings and the content  */
+.flexbox-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem;
+}
+
+/* this is for the images and labels section of the page  */
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* this is the title labeled "Cool Subtitle here"  */
 .subtitle {
     text-align: right;
     font-size: 150%;
     margin: 0;
     padding: 2rem;
+    background-color: var(--light-blue);
     /* background-image: url('./assets/images/pano.jpeg'); */
 }
 
+/* impacts the cards including the image and the text  */
 .card {
     position: relative;
-    border: 5px solid var(--light-blue);
     margin: 0.5rem;
-    width: 45%;
-    display: inl
+    display: inline-block;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 400px;
 }
 
+/* this is the text and label over the image  */
 .img-label {
     position: absolute;
-    bottom: 16px;
+    bottom: 24px;
+    left: 5px;
     background-color: var(--light-blue);
     width: 20rem;
     padding: 10px;
     color: var(--grey);
 }
 
+/* this is the text overlaying the images  */
 .overlay {
     font-size: 180%;
     margin: -4px;
     color: var(--grey);
     padding: 0 0 0 1rem;
+    opacity: 70%;
 }
 
+/* this is the sub text in the overlay  */
 .sub-overlay {
     color: var(--grey);
     padding: 0 0 0 1rem;
 }
 
-.header-links {
-    grid-column-start: 6;
-    grid-column-end: 9;
-    align-items: center;
-    justify-content: center;
-}
-
-#about, #work, #contact {
+/* links in the nav bar  */
+header nav .header-links {
     display: flex;
-    /* add flex-direct colum & align-items center in mobile. */
+    justify-content: space-between;
+    /* align-items: flex-end; */
 }
 
-#first-card {
-    width: 100%;
-    position: relative;
-    border: 5px solid var(--light-blue);
+#work {
     margin: 0.5rem;
+    max-width: 1000px;
 }
-/* #about aside {
-    /* width: 300px; */
-/* } */ 
 
-/* #about div {
-    padding: 25px;
-} */
-/* add media queries here to make it break at small smartphones  */
+/* defines "about" label  */
+#label-1 {
+    position: relative;
+    margin: -10px 0 -10px 0;
+    padding: -10px 0 -10px 0;
+    Height: 5rem;
+}
+
+#card-2,
+#card-3,
+#card-4,
+#card-5 {
+    position: relative;
+    width: 42%;
+    min-width: 410px;
+}
+
+/* defines "work" label  */
+#label-2 {
+    position: relative;
+    margin: -10px 0 -10px 0;
+    padding: -10px 0 -10px 0;
+    Height: 70rem;
+}
+
+/* defines "contact" label  */
+#label-3 {
+    position: relative;
+    bottom: -175px;
+    margin: -10px 0 -10px 0;
+    padding: -10px 0 -10px 0;
+    Height: 5rem;
+}
+
+@media screen and (max-width: 1120px) {
+    #card-2,
+    #card-3,
+    #card-4,
+    #card-5 {
+        position: relative;
+        margin: 0.5rem;
+        max-width: 1000px;
+        max-height: 800px;
+    }
+}
+
+@media screen and (max-width: 883px) {
+    header,
+    nav,
+    .subtitle {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header,
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        margin: 3rem;
+    }
+
+    nav a {
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
+        padding: 4px;
+    }
+}
