@@ -44,6 +44,26 @@ a {
     text-decoration-thickness: 3px;
 }
 
+aside,
+main {
+    display: inline-table;
+    height: 1500px;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    margin: 1rem;
+}
+
+main {
+    position: relative;
+    right: -5rem;
+    display: inline-block;
+    width: 65%;
+    margin: 0 1.5rem 0 1rem;
+}
+
 a:hover {
     color: var(--white);
 }
@@ -52,32 +72,15 @@ a:active {
     color: var(--blue);
 }
 
-section {
-    display: block;
-    flex-wrap: wrap;
-    min-width: 20rem;
-    max-width: 70rem;
-    position: relative;
-}
-
-#about aside, #work aside, #contact aside {
-    display: flex;
-    padding: 5px;
-    /* take margin left off & width for mobile */
-    margin-left: 30px;
-    width: 150px;
-}
-
-#about aside h2, #work aside h2, #contact aside h2 {
-    width: 100%;
-    border-right: solid 3px var(--blue);
-    padding: 1rem 0;
+aside section {
+    border-right: 5px solid var(--blue);
 }
 
 img {
     width: 100%;
     height: 100%;
     opacity: 70%;
+    border: 5px solid var(--light-blue);
 }
 
 img:hover {
@@ -94,15 +97,13 @@ div p {
     font-size: 150%;
     margin: 0;
     padding: 2rem;
+    background-color: var(--light-blue);
     /* background-image: url('./assets/images/pano.jpeg'); */
 }
 
 .card {
     position: relative;
-    border: 5px solid var(--light-blue);
     margin: 0.5rem;
-    width: 45%;
-    display: inl
 }
 
 .img-label {
@@ -133,6 +134,14 @@ div p {
     justify-content: center;
 }
 
+#about aside, #work aside, #contact span {
+    display: flex;
+    padding: 5px;
+    /* take margin left off & width for mobile */
+    margin-left: 30px;
+    width: 150px;
+}
+
 #about, #work, #contact {
     display: flex;
     /* add flex-direct colum & align-items center in mobile. */
@@ -141,9 +150,20 @@ div p {
 #first-card {
     width: 100%;
     position: relative;
-    border: 5px solid var(--light-blue);
     margin: 0.5rem;
 }
+
+#card-2,
+#card-3,
+#card-4,
+#card-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 10px;
+    padding: 5px;
+}
+
 /* #about aside {
     /* width: 300px; */
 /* } */ 
