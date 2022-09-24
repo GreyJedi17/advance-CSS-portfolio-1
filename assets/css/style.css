@@ -87,18 +87,25 @@ div p {
     padding: 0 0 0 1rem;
 }
 
-footer #contact {
-    justify-content: center;
+footer {
+    margin: 10px 10px 100px 10px;
+    justify-content: right;
 }
 
+/* spacing between header and nav menu  */
 header,
 nav {
    justify-content: space-between ;
 }
 
+/* impacts spacing in nav bar  */
 nav a {
     justify-content: space-around;
     margin: 0 10px 0 0;
+}
+
+footer span a {
+    color: var(--blue);
 }
 
 /* this is the contain that holds the section headings and the content  */
@@ -187,7 +194,6 @@ header nav .header-links {
 #card-5 {
     position: relative;
     width: 42%;
-    height: 45%;
     min-width: 410px;
 }
 
