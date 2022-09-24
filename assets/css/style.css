@@ -19,7 +19,6 @@ html {
 header {
     background-color: var(--grey);
     display: flex;
-    /* grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%; */
     width: 100%
 }
 
@@ -36,6 +35,7 @@ h1 {
 /* sets nav bar positioning  */
 nav {
     position: relative;
+    justify-content: flex-end;
     top: 2rem;
 }
 
@@ -85,6 +85,20 @@ img:hover {
 div p {
     text-align: left;
     padding: 0 0 0 1rem;
+}
+
+footer #contact {
+    justify-content: center;
+}
+
+header,
+nav {
+   justify-content: space-between ;
+}
+
+nav a {
+    justify-content: space-around;
+    margin: 0 10px 0 0;
 }
 
 /* this is the contain that holds the section headings and the content  */
@@ -148,16 +162,13 @@ div p {
 }
 
 /* links in the nav bar  */
-.header-links {
+header nav .header-links {
     display: flex;
-    /* grid-column-start: 6;
-    grid-column-end: 9; */
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    /* align-items: flex-end; */
 }
 
 #work {
-    position: relative;
     margin: 0.5rem;
     max-width: 1000px;
 }
@@ -191,6 +202,7 @@ div p {
 /* defines "contact" label  */
 #label-3 {
     position: relative;
+    bottom: -175px;
     margin: -10px 0 -10px 0;
     padding: -10px 0 -10px 0;
     Height: 5rem;
@@ -228,7 +240,7 @@ div p {
     }
 
     nav a {
-        text-underline-offset: 0;
+        text-underline-offset: 2px;
         text-decoration-thickness: 1px;
         padding: 4px;
     }
