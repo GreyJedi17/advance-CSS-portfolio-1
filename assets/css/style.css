@@ -69,7 +69,6 @@ aside {
 aside section {
     border-right: 4px solid var(--blue);
     padding: 4px;
-    align-items: stretch;
 }
 
 /* image attributes  */
@@ -93,6 +92,7 @@ div p {
 .flexbox-container {
     display: flex;
     justify-content: space-around;
+    margin: 4rem;
 }
 
 /* this is for the images and labels section of the page  */
@@ -151,6 +151,30 @@ div p {
     align-items: center;
     justify-content: center;
     /* change at 883px  */
+}
+
+/* defines "about" label  */
+#label-1 {
+    position: relative;
+    margin: -10px 0 -10px 0;
+    padding: -10px 0 -10px 0;
+    Height: 2.25%
+}
+
+/* defines "work" label  */
+#label-2 {
+    position: relative;
+    margin: -10px 0 -10px 0;
+    padding: -10px 0 -10px 0;
+    Height: 50%
+}
+
+/* defines "contact" label  */
+#label-3 {
+    position: relative;
+    margin: -10px 0 -10px 0;
+    padding: -10px 0 -10px 0;
+    Height: 2%
 }
 
 /* add media queries here to make it break at small smartphones  */
