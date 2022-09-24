@@ -180,12 +180,6 @@ div p {
     min-width: 410px;
 }
 
-
-#label-1,
-#about {
-    position: relative;
-}
-
 /* defines "work" label  */
 #label-2 {
     position: relative;
@@ -194,22 +188,12 @@ div p {
     Height: 70rem;
 }
 
-#label-2,
-#work {
-    position: relative;
-}
-
 /* defines "contact" label  */
 #label-3 {
     position: relative;
     margin: -10px 0 -10px 0;
     padding: -10px 0 -10px 0;
     Height: 5rem;
-}
-
-#label-3,
-#contact {
-    position: relative;
 }
 
 @media screen and (max-width: 1120px) {
@@ -249,4 +233,3 @@ div p {
         padding: 4px;
     }
 }
-/* add media queries here to make it break at small smartphones  */
