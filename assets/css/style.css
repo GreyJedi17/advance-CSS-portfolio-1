@@ -44,13 +44,6 @@ a {
     text-decoration-thickness: 3px;
 }
 
-aside,
-main {
-    display: grid;
-    grid-template-columns: 1fr, 3fr;
-    grid-template-rows: auto;
-}
-
 /* aside {
     display: inline-block;
     width: 20%;
@@ -73,6 +66,13 @@ a:active {
     color: var(--blue);
 }
 
+aside {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 aside section {
     border-right: 5px solid var(--blue);
 }
@@ -91,6 +91,12 @@ img:hover {
 div p {
     text-align: left;
     padding: 0 0 0 1rem;
+}
+
+/* this is the contain that holds the section headings and the content  */
+.flexbox-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .subtitle {
@@ -116,6 +122,7 @@ div p {
     color: var(--grey);
 }
 
+/* this is the text overlaying the images  */
 .overlay {
     font-size: 180%;
     margin: -4px;
@@ -123,6 +130,7 @@ div p {
     padding: 0 0 0 1rem;
 }
 
+/* this is the sub text in the overlay  */
 .sub-overlay {
     color: var(--grey);
     padding: 0 0 0 1rem;
@@ -133,14 +141,14 @@ div p {
     grid-column-end: 9;
     align-items: center;
     justify-content: center;
+    /* change at 883px  */
 }
 
 #about aside, #work aside, #contact span {
-    display: flex;
-    padding: 5px;
-    /* take margin left off & width for mobile */
     margin-left: 30px;
     width: 150px;
+    /* take margin left off & width for mobile */
+   
 }
 
 #about, #work, #contact {
