@@ -18,8 +18,9 @@ html {
 /* sets information about header and nav bar */
 header {
     background-color: var(--grey);
-    display: grid;
-    grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%;
+    display: flex;
+    /* grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%; */
+    width: 100%
 }
 
 /* sets name at top left and style  */
@@ -28,8 +29,6 @@ h1 {
     margin: 10px 5px 10px 0px;
     background-color: var(--light-blue);
     color: var(--grey);
-    display: grid;
-    grid-column-start: 0;
     min-width: 200px;
     max-width: 200px;
 }
@@ -116,6 +115,10 @@ div p {
 .card {
     position: relative;
     margin: 0.5rem;
+    display: inline-block;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 400px;
 }
 
 /* this is the text and label over the image  */
@@ -146,11 +149,17 @@ div p {
 
 /* links in the nav bar  */
 .header-links {
-    grid-column-start: 6;
-    grid-column-end: 9;
+    display: flex;
+    /* grid-column-start: 6;
+    grid-column-end: 9; */
     align-items: center;
     justify-content: center;
-    /* change at 883px  */
+}
+
+#work {
+    position: relative;
+    margin: 0.5rem;
+    max-width: 1000px;
 }
 
 /* defines "about" label  */
@@ -158,7 +167,23 @@ div p {
     position: relative;
     margin: -10px 0 -10px 0;
     padding: -10px 0 -10px 0;
-    Height: 2.25%
+    Height: 5rem;
+}
+
+#card-2,
+#card-3,
+#card-4,
+#card-5 {
+    position: relative;
+    width: 42%;
+    height: 45%;
+    min-width: 410px;
+}
+
+
+#label-1,
+#about {
+    position: relative;
 }
 
 /* defines "work" label  */
@@ -166,7 +191,12 @@ div p {
     position: relative;
     margin: -10px 0 -10px 0;
     padding: -10px 0 -10px 0;
-    Height: 50%
+    Height: 70rem;
+}
+
+#label-2,
+#work {
+    position: relative;
 }
 
 /* defines "contact" label  */
@@ -174,7 +204,49 @@ div p {
     position: relative;
     margin: -10px 0 -10px 0;
     padding: -10px 0 -10px 0;
-    Height: 2%
+    Height: 5rem;
 }
 
+#label-3,
+#contact {
+    position: relative;
+}
+
+@media screen and (max-width: 1120px) {
+    #card-2,
+    #card-3,
+    #card-4,
+    #card-5 {
+        position: relative;
+        margin: 0.5rem;
+        max-width: 1000px;
+        max-height: 800px;
+    }
+}
+
+@media screen and (max-width: 883px) {
+    header,
+    nav,
+    .subtitle {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header,
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        margin: 3rem;
+    }
+
+    nav a {
+        text-underline-offset: 0;
+        text-decoration-thickness: 1px;
+        padding: 4px;
+    }
+}
 /* add media queries here to make it break at small smartphones  */
