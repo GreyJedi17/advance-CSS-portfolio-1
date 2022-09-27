@@ -17,10 +17,8 @@ N/A
 
 This is my initial portfolio attempt during the coding bootcamp. HTML and CSS were used from scratch to design and develop this version of the portfolio. 
 
-    ```md
     ![screenshot](./assets/images/screenshot.png)
-    ```
-
+   
 ## Credits
 
 https://www.youtube.com/watch?v=fYq5PXgSsbE&t=627s - used for CSS formatting help. 
