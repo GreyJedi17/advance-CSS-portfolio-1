@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=fYq5PXgSsbE&t=627s - used for CSS formatting hel
 
 ## License
 
-Licensed under the ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) license.
+Licensed under the ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(LICENSE).
 
 ## Features
 
