@@ -17,7 +17,7 @@ N/A
 
 This is my initial portfolio attempt during the coding bootcamp. HTML and CSS were used from scratch to design and develop this version of the portfolio. 
 
-    ![screenshot](/assets/images/screenshot.png?raw=true)
+![screenshot](/assets/images/screenshot.png?)
    
 ## Credits
 
@@ -28,7 +28,7 @@ https://stackoverflow.com/questions/10189356/how-to-add-screenshot-to-readmes-in
 
 ## License
 
-Licensed under the ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(LICENSE).
+Licensed under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) license.
 
 ## Features
 
