@@ -17,7 +17,7 @@ N/A
 
 This is my initial portfolio attempt during the coding bootcamp. HTML and CSS were used from scratch to design and develop this version of the portfolio. 
 
-    ![screenshot](./assets/images/screenshot.png?raw=true)
+    ![screenshot](/assets/images/screenshot.png?raw=true)
    
 ## Credits
 
