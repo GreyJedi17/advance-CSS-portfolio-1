@@ -17,7 +17,7 @@ N/A
 
 This is my initial portfolio attempt during the coding bootcamp. HTML and CSS were used from scratch to design and develop this version of the portfolio.
 
-[Portfolio-1](https://rtcottle.github.io/advanced-CSS-portfolio-1/)]
+[Portfolio-1](https://rtcottle.github.io/advanced-CSS-portfolio-1/)
 
 ![screenshot](/assets/images/screenshot.png?)
    
